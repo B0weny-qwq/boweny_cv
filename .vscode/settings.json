@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.typ": "typst"
+  },
+  "tinymist.exportPdf": "onSave",
+  "tinymist.outputPath": "$root/out/$name",
+  "tinymist.projectResolution": "singleFile",
+  "editor.formatOnSave": false,
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
+    "editor.wordWrap": "on"
+  }
+}

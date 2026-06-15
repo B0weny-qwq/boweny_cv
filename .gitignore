@@ -1,0 +1,21 @@
+# Typst outputs
+*.pdf
+*.png
+*.svg
+*.html
+out/
+dist/
+
+# Local editor files
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Personal assets
+assets/*
+!assets/.gitkeep
