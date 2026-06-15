@@ -1,6 +1,7 @@
 # Typst outputs
 *.pdf
 *.png
+!docs/preview.png
 *.svg
 *.html
 out/

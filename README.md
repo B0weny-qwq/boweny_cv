@@ -2,6 +2,10 @@
 
 一个单文件 Typst 中文简历模板。模板把“内容区”和“排版区”分开，使用者主要修改 `cv.typ` 顶部的内容变量即可，不需要理解 Typst 的排版代码。
 
+## 预览
+
+![Boweny CV preview](docs/preview.png)
+
 ## 特性
 
 - 单文件模板，复制 `cv.typ` 即可使用
@@ -88,6 +92,7 @@ assets/profile.jpg
 .
 ├── cv.typ              # 主模板
 ├── assets/             # 可选照片资源目录
+├── docs/preview.png    # README 预览图
 ├── README.md
 ├── LICENSE
 └── .gitignore
