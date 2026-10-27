@@ -1,22 +1,18 @@
-# Typst outputs
+# Generated outputs
 *.pdf
-*.png
-!docs/preview.png
-*.svg
-*.html
+!docs/cv.pdf
+.dsh-office-*
+*.tmp
 out/
 dist/
 
-# Local editor files
+# Editors and OS
 .vscode/*
 !.vscode/settings.json
 .idea/
-
-# OS files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Personal assets
-assets/*
-!assets/.gitkeep
+# Private assets: keep personal files here, never commit them
+assets/private/

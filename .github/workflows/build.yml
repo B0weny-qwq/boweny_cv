@@ -4,16 +4,25 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Typst
         uses: typst-community/setup-typst@v4
-
-      - name: Compile template
-        run: typst compile cv.typ cv.pdf
+        with:
+          typst-version: "0.15.1"
+      - name: Compile template and legacy entry
+        run: |
+          typst compile --font-path assets/fonts main.typ cv.pdf
+          typst compile --font-path assets/fonts cv.typ legacy.pdf
+      - name: Upload sample PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: boweny-cv-example
+          path: cv.pdf

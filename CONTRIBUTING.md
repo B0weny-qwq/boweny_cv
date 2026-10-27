@@ -1,21 +1,11 @@
-# Contributing
+# 参与贡献
 
-欢迎提交 issue 或 pull request 改进模板。
+欢迎通过 Issue 或 Pull Request 改进模板。
 
-## 开发流程
+1. 内容示例修改 main.typ，组件修改 template.typ，样式变量修改 theme.typ
+2. 使用 Typst 0.15.1 编译：`typst compile --font-path assets/fonts main.typ cv.pdf`
+3. 检查 A4 页数、断行、字体和长链接；样式变更应更新 docs/cv.pdf 与 docs/preview.png
+4. 确认只包含虚构占位内容，不提交个人电话、邮箱、照片或真实履历
+5. 保留字体许可，新增素材请说明来源与使用条件
 
-1. 修改 `cv.typ` 或文档。
-2. 本地编译检查：
-
-```powershell
-typst compile cv.typ cv.pdf
-```
-
-3. 确认模板仍然适合作为通用简历模板，不包含个人隐私信息。
-4. 提交 PR。
-
-## 内容原则
-
-- 默认内容使用占位示例，不写真实个人信息。
-- 保持单文件使用体验，避免引入复杂依赖。
-- 样式改动应优先保留一页 A4 的可读性。
+模板不依赖在线包。优先保障可读性，不通过过小字号、负间距或裁切把内容硬塞进一页。
